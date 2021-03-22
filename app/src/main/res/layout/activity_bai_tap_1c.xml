@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaiTap_1c"
+    android:background="#A031AA52">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="LOGIN"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:hint="Email"
+        android:background="#C4C4C4"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"></EditText>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:hint="Password"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawableRight="@drawable/eye"
+        android:background="#C4C4C4"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/et1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et1"
+        app:layout_constraintTop_toBottomOf="@+id/et1"></EditText>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#E53935"
+        android:text="LOGIN"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/et2"
+        app:layout_constraintStart_toStartOf="@+id/et2"
+        app:layout_constraintTop_toBottomOf="@+id/et2"></Button>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When you agree to terms and conditions"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"></TextView>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For got your password?"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="#5D25FA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+       ></TextView>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or login with"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="71dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        android:layout_width="330dp">
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#25479B"
+            android:src="@drawable/facebook"
+          />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#0F8EE0"
+            android:src="@drawable/zalo" />
+
+        <ImageButton
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:src="@drawable/google"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
